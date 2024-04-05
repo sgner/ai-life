@@ -15,8 +15,8 @@ mybatis:
 aliyun:
   oss:
     endpoint: https://oss-cn-beijing.aliyuncs.com
-    OSS_ACCESS_KEY_ID: LTAI5tKK9ayrJ7TftSfjtfaj
-    OSS_ACCESS_KEY_SECRET: S6z16d5FioWNnrhkax4zOWDy4Hm7U5
+    OSS_ACCESS_KEY_ID:
+    OSS_ACCESS_KEY_SECRET:
     bucketName: web-tianci
 logging:
   level:
