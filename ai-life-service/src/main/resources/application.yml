@@ -1,0 +1,42 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb1
+    username: root
+    password: cfwrettt.com
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    OSS_ACCESS_KEY_ID: LTAI5tKK9ayrJ7TftSfjtfaj
+    OSS_ACCESS_KEY_SECRET: S6z16d5FioWNnrhkax4zOWDy4Hm7U5
+    bucketName: web-tianci
+logging:
+  level:
+     com:
+      life:
+        ai:
+          mapper: debug
+          service: info
+          controller: info
+life:
+  ai:
+    jwt:
+      admin-secret-key: litianciskey
+      admin-ttl: 6000000
+      admin-token-name: token
+
+      user-secret-key: litianciskey
+      user-ttl: 6000000
+      user-token-name: authentication
+
+    wechat:
+      appid:
+      secret:

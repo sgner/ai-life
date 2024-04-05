@@ -12,8 +12,25 @@
     <groupId>com.life.ai</groupId>
     <artifactId>ai-life</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -25,9 +42,29 @@
                 <version>${mybatis.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-websocket</artifactId>
+                <version>${websocket.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${aliyun.sdk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjosn.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -37,6 +74,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mybatis.version>3.0.3</mybatis.version>
         <httpclient.version>4.5.13</httpclient.version>
+        <aliyun.sdk.version>3.15.1</aliyun.sdk.version>
+        <fastjosn.version>1.2.66</fastjosn.version>
+        <pagehelper.version>1.4.6</pagehelper.version>
+        <lombok.version>1.18.30</lombok.version>
+        <redis.version>3.2.2</redis.version>
+        <websocket.version>5.3.22</websocket.version>
     </properties>
     <modules>
         <module>
@@ -49,5 +92,6 @@
         <module>ai-life-common</module>
         <module>ai-life-common</module>
     </modules>
+
     <packaging>pom</packaging>
 </project>
