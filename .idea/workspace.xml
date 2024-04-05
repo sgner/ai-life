@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b69c3c-0c65-4374-8458-9c18909c4b92" name="Changes" comment="更新">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-common/src/main/java/com/life/ai/properties/AliOssProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-common/src/main/java/com/life/ai/properties/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-common/src/main/java/com/life/ai/properties/WeChatProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-common/src/main/java/com/life/ai/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-common/src/main/java/com/life/ai/utils/AliOssUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-common/src/main/java/com/life/ai/utils/HttpClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-common/src/main/java/com/life/ai/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-pojo/src/main/java/com/ai_life/dto/UserLoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-pojo/src/main/java/com/ai_life/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-pojo/src/main/java/com/ai_life/vo/UserLoginVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/websocket/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/resources/com/life/ai/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-life-service/src/test/java/com/life/ai/HttpClientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/用户端接口.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/管理端接口.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-life-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-life-pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-pojo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-life-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-life-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="23b69c3c-0c65-4374-8458-9c18909c4b92" name="Changes" comment="更新" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +113,7 @@
       <workItem from="1711947218317" duration="9052000" />
       <workItem from="1712137223118" duration="11545000" />
       <workItem from="1712206525920" duration="20329000" />
-      <workItem from="1712291135024" duration="3862000" />
+      <workItem from="1712291135024" duration="3958000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <option name="closed" value="true" />
@@ -156,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711905762282</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="更新">
+      <option name="closed" value="true" />
+      <created>1712301329717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712301329717</updated>
+    </task>
+    <task id="LOCAL-00003" summary="更新">
+      <option name="closed" value="true" />
+      <created>1712301340309</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712301340309</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
