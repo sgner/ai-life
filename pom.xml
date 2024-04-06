@@ -41,10 +41,16 @@
                 <artifactId>mybatis-spring-boot-starter-test</artifactId>
                 <version>${mybatis.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-websocket</artifactId>
-                <version>${websocket.version}</version>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-websocket</artifactId>
+                <version>${spring.websocket.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -64,7 +70,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-redis</artifactId>
-                <version>${redis.version}</version>
+                <version>${redis.data.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -79,7 +85,9 @@
         <pagehelper.version>1.4.6</pagehelper.version>
         <lombok.version>1.18.30</lombok.version>
         <redis.version>3.2.2</redis.version>
-        <websocket.version>5.3.22</websocket.version>
+        <spring.websocket.version>3.2.4</spring.websocket.version>
+        <redis.data.version>3.2.4</redis.data.version>
+        <hutool.version>5.8.20</hutool.version>
     </properties>
     <modules>
         <module>
@@ -92,6 +100,21 @@
         <module>ai-life-common</module>
         <module>ai-life-common</module>
     </modules>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>pom</packaging>
 </project>

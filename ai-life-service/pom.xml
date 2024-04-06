@@ -14,6 +14,26 @@
     <description>ai-life-service</description>
     <properties>
         <java.version>17</java.version>
+        <datasource.driver-class-name>com.mysql.cj.jdbc.Driver</datasource.driver-class-name>
+        <datasource.url>jdbc:mysql://localhost:3306/ai_life</datasource.url>
+        <datasource.username>root</datasource.username>
+        <datasource.password>cfwrettt.com</datasource.password>
+        <aliyun.oss.endpoint>https://oss-cn-beijing.aliyuncs.com</aliyun.oss.endpoint>
+        <aliyun.oss.OSS_ACCESS_KEY_ID> </aliyun.oss.OSS_ACCESS_KEY_ID>
+        <aliyun.oss.OSS_ACCESS_KEY_SECRET> </aliyun.oss.OSS_ACCESS_KEY_SECRET>
+        <aliyun.oss.bucketName>web-tianci</aliyun.oss.bucketName>
+        <jwt.admin-secret-key>litianciskey</jwt.admin-secret-key>
+        <jwt.admin-ttl>6000000 </jwt.admin-ttl>
+        <jwt.admin-token-name> token</jwt.admin-token-name>
+        <jwt.user-secret-key>litianciskey</jwt.user-secret-key>
+        <jwt.user-ttl>6000000</jwt.user-ttl>
+        <jwt.user-token-name>authentication</jwt.user-token-name>
+        <wechat.appid> </wechat.appid>
+        <wechat.secret> </wechat.secret>
+        <redis.host>localhost</redis.host>
+        <redis.post>6379</redis.post>
+        <redis.password>123456</redis.password>
+        <redis.database>1</redis.database>
     </properties>
     <dependencies>
         <dependency>
@@ -31,6 +51,18 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis-reactive</artifactId>
         </dependency>
@@ -42,7 +74,6 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -76,7 +107,6 @@
             <artifactId>spring-websocket</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>

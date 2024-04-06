@@ -1,23 +1,23 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mydb1
-    username: root
-    password: cfwrettt.com
-  servlet:
-    multipart:
-      max-file-size: 10MB
-      max-request-size: 100MB
+    driver-class-name: @datasource.driver-class-name@
+    url: @datasource.url@
+    username: @datasource.username@
+    password: @datasource.password@
+#  servlet:
+#    multipart:
+#      max-file-size: ${ai.life.servlet.multipart.max-file-size}
+#      max-request-size: ${ai.life.servlet.multipart.max-request-size}
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
 aliyun:
   oss:
-    endpoint: https://oss-cn-beijing.aliyuncs.com
-    OSS_ACCESS_KEY_ID:
-    OSS_ACCESS_KEY_SECRET:
-    bucketName: web-tianci
+    endpoint: @aliyun.oss.endpoint@
+    OSS_ACCESS_KEY_ID: @aliyun.oss.OSS_ACCESS_KEY_ID@
+    OSS_ACCESS_KEY_SECRET: @aliyun.oss.OSS_ACCESS_KEY_SECRET@
+    bucketName: @aliyun.oss.bucketName@
 logging:
   level:
      com:
@@ -29,14 +29,20 @@ logging:
 life:
   ai:
     jwt:
-      admin-secret-key: litianciskey
-      admin-ttl: 6000000
-      admin-token-name: token
+      admin-secret-key: @jwt.admin-secret-key@
+      admin-ttl: @jwt.admin-ttl@
+      admin-token-name: @jwt.admin-token-name@
 
-      user-secret-key: litianciskey
-      user-ttl: 6000000
-      user-token-name: authentication
+      user-secret-key: @jwt.user-secret-key@
+      user-ttl: @jwt.user-ttl@
+      user-token-name: @jwt.user-token-name@
 
     wechat:
-      appid:
-      secret:
+      appid: @wechat.appid@
+      secret: @wechat.secret@
+
+redis:
+  host: @redis.host@
+  post: @redis.post@
+  password: @redis.password@
+  database: @redis.database@
