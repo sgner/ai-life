@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b69c3c-0c65-4374-8458-9c18909c4b92" name="Changes" comment="删除阿里云oss密钥" />
+    <list default="true" id="23b69c3c-0c65-4374-8458-9c18909c4b92" name="Changes" comment="删除阿里云oss密钥">
+      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-life-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-life-service/src/test/java/com/life/ai/redisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-life-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/AiLifeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/AiLifeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/websocket/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-service/src/main/java/com/life/ai/websocket/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-life-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-life-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,9 +41,13 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="localRepository" value="D:\apache-maven-3.9.6\maven_repo" />
+        <option name="mavenHome" value="D:\apache-maven-3.9.6" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -47,9 +64,15 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "JUnit.HttpClientTest.test.executor": "Run",
+    "Maven.ai-life-service [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AiLifeServiceApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
@@ -61,7 +84,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "com.gitee.ui.GiteeSettingsConfigurable",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -70,7 +93,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.HttpClientTest.test">
+  <component name="RunManager" selected="Spring Boot.AiLifeServiceApplication">
     <configuration name="HttpClientTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ai-life-service" />
       <extension name="coverage">
@@ -113,7 +136,9 @@
       <workItem from="1711947218317" duration="9052000" />
       <workItem from="1712137223118" duration="11545000" />
       <workItem from="1712206525920" duration="20329000" />
-      <workItem from="1712291135024" duration="5414000" />
+      <workItem from="1712291135024" duration="13177000" />
+      <workItem from="1712385634959" duration="14155000" />
+      <workItem from="1712412289882" duration="6922000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <option name="closed" value="true" />
@@ -171,11 +196,30 @@
       <option name="project" value="LOCAL" />
       <updated>1712302762787</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="删除阿里云oss密钥">
+      <option name="closed" value="true" />
+      <created>1712302966851</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712302966851</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
